@@ -548,28 +548,16 @@ footer ul a:hover {
   font-weight: bold;
   text-align: center;
   color: #e6e7e8;
+  margin-bottom: -25px;
 }
-.db-showall .item {
-  margin-bottom: 30px;
-  position: relative;
-  min-width: 100%;
-  opacity: 1;
-  overflow: hidden;
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.db-showall .item:hover {
-  opacity: 0.7;
-}
-.db-showall .item .block-item {
+.db-showall .block-item {
   padding: 25px 25px;
   min-width: 100%;
-  height: 100%;
-  background: rgba(150, 120, 94, 0);
+  margin-bottom: 30px;
+  height: 400px;
+  background-color: rgba(150, 120, 94, 0);
 }
-.db-showall .item .block-item h4 {
+.db-showall .block-item h4 {
   min-width: 90%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -578,14 +566,17 @@ footer ul a:hover {
   font-size: 25px;
   line-height: 1.5em;
 }
-.db-showall .item .block-item .block-info {
+.db-showall .block-item .block-info {
   margin-top: 20px;
   line-height: 2em;
   color: #ffffff;
   text-align: center;
   opacity: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 8em;
 }
-.db-showall .item .block-item .block-btn {
+.db-showall .block-item .block-btn {
   margin-top: 25px;
   padding: 10px 35px;
   border: 1px solid #ffffff;
@@ -594,20 +585,39 @@ footer ul a:hover {
   font-size: 12px;
   font-weight: bold;
   color: #ffffff;
-  position: relative;
-  text-align: center;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
-.db-showall .item .block-item:hover {
-  background: rgba(150, 120, 94, 0.4);
+.db-showall .block-item:hover {
+  background-color: rgba(150, 120, 94, 0.4);
+  -ms-transform: background-color 2s;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  transition: background-color 2s;
 }
-.db-showall .item .block-item:hover h4 {
+.db-showall .block-item:hover h4 {
   color: #ffffff;
 }
-.db-showall .item .block-item:hover .block-info {
+.db-showall .block-item:hover .block-info,
+.db-showall .block-item:hover .block-btn {
   opacity: 1;
+  -ms-transform: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  transition: opacity 2s;
 }
-.db-showall .item .block-item:hover .block-btn {
-  opacity: 1;
+.db-showall .loadmore-btn {
+  font-size: 22px;
+  color: #939598;
+  line-height: 1.5em;
+  text-decoration: none;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.db-showall .loadmore-icon {
+  font-size: 22px;
+  color: #939598;
+  text-transform: uppercase;
 }

@@ -558,7 +558,10 @@ footer ul a:hover {
   max-width: 100%;
   margin-bottom: 30px;
   height: 400px;
+  display: block;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .db-showall .block-item .bg-opacity {
   padding: 25px 25px;
@@ -645,4 +648,28 @@ footer ul a:hover {
   display: block;
   position: relative;
   margin: 15px auto 0 auto;
+}
+/*---------- Small devices (tablets, 768px and up) -----------*/
+@media (max-width: 768px) {
+  .db-showall .db-title {
+    font-size: 50px;
+    margin-bottom: -5px;
+  }
+  .db-showall .block-item .bg-opacity {
+    background-color: rgba(150, 120, 94, 0.5) !important;
+  }
+  .db-showall .block-item .bg-opacity h4 {
+    color: #ffffff;
+  }
+  .db-showall .block-item .bg-opacity .block-info {
+    color: #ffffff;
+    opacity: 1 !important;
+    font-size: 1.2em;
+  }
+  .db-showall .block-item .bg-opacity .block-btn {
+    opacity: 1 !important;
+    font-size: 1.2em;
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
 }

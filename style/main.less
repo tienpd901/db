@@ -9,6 +9,9 @@
 //ShowAll
 @product-color: #343333;
 @product-color-hover: #ffffff;
+//Media sreen
+@screen-sm-min: 768px;
+
 
 //Mixin
 .text-overflow() {
@@ -752,7 +755,7 @@ footer {
 		max-width: 100%;
 		margin-bottom: 30px;
 		height: 400px;
-		background-repeat: no-repeat;
+		.background-image;
 		
 		.bg-opacity {
 			padding: 25px 25px;
@@ -836,6 +839,43 @@ footer {
 	}
 
 }
+	/*---------- Small devices (tablets, 768px and up) -----------*/
+@media (max-width: 768px) {
+	.db-showall {
+
+		.db-title {
+			font-size: 50px;
+			margin-bottom: -5px;
+		}
+
+		.block-item {
+						
+			.bg-opacity {
+				background-color: rgba(150, 120, 94, 0.5) !important;
+				
+				h4 {
+					color: @product-color-hover;
+				
+				}
+
+				.block-info {
+					color: @product-color-hover;
+					opacity: 1 !important;
+					font-size: 1.2em;
+				}
+				.block-btn {
+					opacity: 1 !important;
+					font-size: 1.2em;
+					border: none !important;
+					background-color: rgba(0, 0, 0, 0.5) !important;
+				}
+				
+			}
+		}
+
+	}
+}
+
 
 @import url(tablet.less);
 @import url(mobile.less);

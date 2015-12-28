@@ -549,15 +549,29 @@ footer ul a:hover {
   text-align: center;
   color: #e6e7e8;
   margin-bottom: -25px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
 .db-showall .block-item {
-  padding: 25px 25px;
-  min-width: 100%;
+  max-width: 100%;
   margin-bottom: 30px;
   height: 400px;
-  background-color: rgba(150, 120, 94, 0);
+  background-repeat: no-repeat;
 }
-.db-showall .block-item h4 {
+.db-showall .block-item .bg-opacity {
+  padding: 25px 25px;
+  background-color: rgba(150, 120, 94, 0);
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+.db-showall .block-item .bg-opacity h4 {
   min-width: 90%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -565,8 +579,12 @@ footer ul a:hover {
   text-align: center;
   font-size: 25px;
   line-height: 1.5em;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
-.db-showall .block-item .block-info {
+.db-showall .block-item .bg-opacity .block-info {
   margin-top: 20px;
   line-height: 2em;
   color: #ffffff;
@@ -575,8 +593,12 @@ footer ul a:hover {
   text-overflow: ellipsis;
   overflow: hidden;
   max-height: 8em;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
-.db-showall .block-item .block-btn {
+.db-showall .block-item .bg-opacity .block-btn {
   margin-top: 25px;
   padding: 10px 35px;
   border: 1px solid #ffffff;
@@ -588,24 +610,24 @@ footer ul a:hover {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
-.db-showall .block-item:hover {
+.db-showall .block-item .bg-opacity .block-btn:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+.db-showall .block-item .bg-opacity:hover {
   background-color: rgba(150, 120, 94, 0.4);
-  -ms-transform: background-color 2s;
-  -webkit-transition: background-color 2s;
-  -moz-transition: background-color 2s;
-  transition: background-color 2s;
 }
-.db-showall .block-item:hover h4 {
+.db-showall .block-item .bg-opacity:hover h4 {
   color: #ffffff;
 }
-.db-showall .block-item:hover .block-info,
-.db-showall .block-item:hover .block-btn {
+.db-showall .block-item .bg-opacity:hover .block-info,
+.db-showall .block-item .bg-opacity:hover .block-btn {
   opacity: 1;
-  -ms-transform: opacity 2s;
-  -webkit-transition: opacity 2s;
-  -moz-transition: opacity 2s;
-  transition: opacity 2s;
 }
 .db-showall .loadmore-btn {
   font-size: 22px;
@@ -617,7 +639,10 @@ footer ul a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 .db-showall .loadmore-icon {
-  font-size: 22px;
-  color: #939598;
-  text-transform: uppercase;
+  width: 39px;
+  height: 19px;
+  background: url("../images/db-icon-loadmore.png") no-repeat;
+  display: block;
+  position: relative;
+  margin: 15px auto 0 auto;
 }

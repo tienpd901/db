@@ -745,75 +745,76 @@ footer {
 		text-align: center;
 		color: @title-color;
 		margin-bottom: -25px;
+		.transition;
 	}
 
 	.block-item {
-		padding: 25px 25px;
-		min-width: 100%;
+		max-width: 100%;
 		margin-bottom: 30px;
 		height: 400px;
-		background-color: rgba(150, 120, 94, 0);
+		background-repeat: no-repeat;
 		
-
-		h4 {
-			min-width: 90%;
-			font-family: @font-montserrat;
-			font-weight: bold;
-			color: @product-color;
-			text-align: center;
-			font-size: 25px;
-			line-height: 1.5em;
-		}
-
-		.block-info {
-			margin-top: 20px;
-			line-height: 2em;
-			color: @product-color-hover;
-			text-align: center;
-			opacity: 0;
-			text-overflow: ellipsis;
-			overflow: hidden;
-    		max-height: 2em * 4;
-			
-		}
-
-		.block-btn {
-			margin-top: 25px;
-			padding: 10px 35px;
-			border: 1px solid @product-color-hover;
-			opacity: 0;
-			text-decoration: none;
-			font-size: 12px;
-			font-weight: bold;
-			color: @product-color-hover;
-			display: inline-block;
-			font-family: @font-montserrat;
-			text-transform: uppercase;
-		}
-		
-
-		&:hover {
-			background-color: rgba(150, 120, 94, 0.4);
-			-ms-transform: background-color 2s;
-			-webkit-transition: background-color 2s;
-			-moz-transition: background-color 2s;
-			transition: background-color 2s;
+		.bg-opacity {
+			padding: 25px 25px;
+			background-color: rgba(150, 120, 94, 0);
+			position: relative;
+			max-width: 100%;
+			height: 400px;
+			.transition;
 
 			h4 {
+				min-width: 90%;
+				font-family: @font-montserrat;
+				font-weight: bold;
+				color: @product-color;
+				text-align: center;
+				font-size: 25px;
+				line-height: 1.5em;
+				.transition;
+			}
+
+			.block-info {
+				margin-top: 20px;
+				line-height: 2em;
 				color: @product-color-hover;
+				text-align: center;
+				opacity: 0;
+				text-overflow: ellipsis;
+				overflow: hidden;
+	    		max-height: 2em * 4;
+	    		.transition;
 			}
-
-			.block-info, 
 			.block-btn {
-				opacity: 1;
-				-ms-transform: opacity 2s;
-				-webkit-transition: opacity 2s;
-				-moz-transition: opacity 2s;
-				transition: opacity 2s;
+				margin-top: 25px;
+				padding: 10px 35px;
+				border: 1px solid @product-color-hover;
+				opacity: 0;
+				text-decoration: none;
+				font-size: 12px;
+				font-weight: bold;
+				color: @product-color-hover;
+				display: inline-block;
+				font-family: @font-montserrat;
+				text-transform: uppercase;
+				.transition;
+				&:hover {
+					background-color: @link-color-hover;
+					border: 1px solid @link-color-hover; 
+				}
 			}
+			&:hover {
+				background-color: rgba(150, 120, 94, 0.4);
 
+				h4 {
+				color: @product-color-hover;
+				}
+
+				.block-info, 
+				.block-btn {
+					opacity: 1;
+				}
+			}
 		}
-
 	}
 
 	.loadmore-btn {
@@ -826,9 +827,12 @@ footer {
 		font-family: @font-montserrat;
 	}
 	.loadmore-icon {
-		font-size: 22px;
-		color: @link-color;
-		text-transform: uppercase;
+		width: 39px;
+		height: 19px;
+		background: url("../images/db-icon-loadmore.png") no-repeat;
+		display: block;
+		position: relative;
+		margin: 15px auto 0 auto;
 	}
 
 }

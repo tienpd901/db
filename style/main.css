@@ -590,9 +590,8 @@ footer ul a:hover {
 .db-showall .block-item .bg-opacity .block-info {
   margin-top: 20px;
   line-height: 2em;
-  color: #ffffff;
+  color: #343333;
   text-align: center;
-  opacity: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   max-height: 8em;
@@ -648,6 +647,96 @@ footer ul a:hover {
   display: block;
   position: relative;
   margin: 15px auto 0 auto;
+}
+/*----------  All Project --------*/
+.db-allprojects {
+  margin-bottom: 100px;
+}
+.db-allprojects .db-title {
+  font-size: 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #e6e7e8;
+  margin-top: 100px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+.db-allprojects .block-img {
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+.db-allprojects .block-img img {
+  width: 100%;
+}
+.db-allprojects h4 {
+  min-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #343333;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+  margin-top: -5px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+.db-allprojects .block-info {
+  margin-bottom: 35px;
+  line-height: 2em;
+  color: #343333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 8em;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+.db-allprojects .block-btn {
+  padding: 10px 35px;
+  border: 1px solid #343333;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #343333;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+.db-allprojects .block-btn:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+.db-allprojects .block-item {
+  max-width: 100%;
+  margin-bottom: 30px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.db-allprojects .block-item .bg-opacity {
+  background-color: #96785e;
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
 /*---------- Small devices (tablets, 768px and up) -----------*/
 @media (max-width: 768px) {

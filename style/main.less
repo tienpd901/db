@@ -779,9 +779,8 @@ footer {
 			.block-info {
 				margin-top: 20px;
 				line-height: 2em;
-				color: @product-color-hover;
+				color: @product-color;
 				text-align: center;
-				opacity: 0;
 				text-overflow: ellipsis;
 				overflow: hidden;
 	    		max-height: 2em * 4;
@@ -839,7 +838,89 @@ footer {
 	}
 
 }
-	/*---------- Small devices (tablets, 768px and up) -----------*/
+/*----------  All Project --------*/
+.db-allprojects {
+	margin-bottom: 100px;
+
+	.db-title {
+		font-size: 150px;
+		font-family: @font-montserrat;
+		font-weight: bold;
+		text-align: center;
+		color: @title-color;
+		margin-top: 100px;
+		.transition;
+	}
+	
+	.block-img {
+		max-width: 100%;
+		overflow: hidden;
+		margin-bottom: 30px;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h4 {
+		min-width: 100%;
+		font-family: @font-montserrat;
+		font-weight: bold;
+		color: @product-color;
+		font-size: 20px;
+		line-height: 1.5em;
+		margin-bottom: 25px;
+		margin-top: -5px;
+		.transition;
+	}
+
+	.block-info {
+		margin-bottom: 35px;
+		line-height: 2em;
+		color: @product-color;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		max-height: 2em * 4;
+		.transition;
+	}
+	.block-btn {
+		padding: 10px 35px;
+		border: 1px solid @product-color;
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: bold;
+		color: @product-color;
+		display: inline-block;
+		font-family: @font-montserrat;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		.transition;
+		&:hover {
+			background-color: @link-color-hover;
+			border: 1px solid @link-color-hover;
+			color: @product-color-hover;
+		}
+	}
+	
+	.block-item {
+		max-width: 100%;
+		margin-bottom: 30px;
+		.background-image;
+
+		.bg-opacity {
+			background-color: rgba(150, 120, 94, 1);
+			position: relative;
+			max-width: 100%;
+			height: 400px;
+			.transition;
+		}
+	}
+	
+}
+
+
+/*---------- Small devices (tablets, 768px and up) -----------*/
 @media (max-width: 768px) {
 	.db-showall {
 

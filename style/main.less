@@ -738,6 +738,8 @@ footer {
 }
 
 /*----------  Show all  ----------*/
+
+/*----------  Show all  ----------*/
 .db-showall {
 	margin-bottom: 100px;
 
@@ -752,7 +754,7 @@ footer {
 	}
 
 	.block-item {
-		max-width: 100%;
+		width: 100%;
 		margin-bottom: 30px;
 		height: 400px;
 		.background-image;
@@ -766,30 +768,32 @@ footer {
 			.transition;
 
 			h4 {
-				min-width: 90%;
 				font-family: @font-montserrat;
 				font-weight: bold;
 				color: @product-color;
 				text-align: center;
-				font-size: 25px;
+				font-size: 30px;
 				line-height: 1.5em;
+				margin-bottom: 30px;
 				.transition;
 			}
 
 			.block-info {
-				margin-top: 20px;
 				line-height: 2em;
-				color: @product-color;
+				color: @product-color-hover;
 				text-align: center;
-				text-overflow: ellipsis;
 				overflow: hidden;
 	    		max-height: 2em * 4;
+	    		opacity: 0;
+	    		font-size: 16px;
+				font-family: @font-lato;
+	    		margin-bottom: 30px;
 	    		.transition;
 			}
 			.block-btn {
 				margin-top: 25px;
 				padding: 10px 35px;
-				border: 1px solid @product-color-hover;
+				border: 2px solid @product-color-hover;
 				opacity: 0;
 				text-decoration: none;
 				font-size: 12px;
@@ -798,17 +802,18 @@ footer {
 				display: inline-block;
 				font-family: @font-montserrat;
 				text-transform: uppercase;
+				letter-spacing: 2px;
 				.transition;
 				&:hover {
 					background-color: @link-color-hover;
-					border: 1px solid @link-color-hover; 
+					border-color: @link-color-hover; 
 				}
 			}
 			&:hover {
 				background-color: rgba(150, 120, 94, 0.4);
 
 				h4 {
-				color: @product-color-hover;
+					color: @product-color-hover;
 				}
 
 				.block-info, 
@@ -827,6 +832,10 @@ footer {
 		margin-bottom: 30px;
 		text-transform: uppercase;
 		font-family: @font-montserrat;
+
+		&:hover{
+			color: @link-color-hover;
+		}
 	}
 	.loadmore-icon {
 		width: 39px;
@@ -834,9 +843,10 @@ footer {
 		background: url("../images/db-icon-loadmore.png") no-repeat;
 		display: block;
 		position: relative;
-		margin: 15px auto 0 auto;
+		margin: 5px auto 0 auto;
+		background-size: 30px;
+		background-position: center center;
 	}
-
 }
 /*----------  All Project --------*/
 .db-allprojects {

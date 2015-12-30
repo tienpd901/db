@@ -539,6 +539,7 @@ footer ul a:hover {
   color: #000000;
 }
 /*----------  Show all  ----------*/
+/*----------  Show all  ----------*/
 .db-showall {
   margin-bottom: 100px;
 }
@@ -555,7 +556,7 @@ footer ul a:hover {
   -ms-transition: all 300ms ease-in-out;
 }
 .db-showall .block-item {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 30px;
   height: 400px;
   display: block;
@@ -575,26 +576,28 @@ footer ul a:hover {
   -ms-transition: all 300ms ease-in-out;
 }
 .db-showall .block-item .bg-opacity h4 {
-  min-width: 90%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #343333;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.5em;
+  margin-bottom: 30px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
 }
 .db-showall .block-item .bg-opacity .block-info {
-  margin-top: 20px;
   line-height: 2em;
-  color: #343333;
+  color: #ffffff;
   text-align: center;
-  text-overflow: ellipsis;
   overflow: hidden;
   max-height: 8em;
+  opacity: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 30px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -603,7 +606,7 @@ footer ul a:hover {
 .db-showall .block-item .bg-opacity .block-btn {
   margin-top: 25px;
   padding: 10px 35px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   opacity: 0;
   text-decoration: none;
   font-size: 12px;
@@ -612,6 +615,7 @@ footer ul a:hover {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  letter-spacing: 2px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -619,7 +623,7 @@ footer ul a:hover {
 }
 .db-showall .block-item .bg-opacity .block-btn:hover {
   background-color: #000000;
-  border: 1px solid #000000;
+  border-color: #000000;
 }
 .db-showall .block-item .bg-opacity:hover {
   background-color: rgba(150, 120, 94, 0.4);
@@ -640,17 +644,73 @@ footer ul a:hover {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
+.db-showall .loadmore-btn:hover {
+  color: #000000;
+}
 .db-showall .loadmore-icon {
   width: 39px;
   height: 19px;
   background: url("../images/db-icon-loadmore.png") no-repeat;
   display: block;
   position: relative;
-  margin: 15px auto 0 auto;
+  margin: 5px auto 0 auto;
+  background-size: 30px;
+  background-position: center center;
 }
-/*----------  All Project --------*/
+/*----------  All project  ----------*/
 .db-allprojects {
   margin-bottom: 100px;
+}
+.db-allprojects .db-prj-featured {
+  margin-bottom: 50px;
+}
+.db-allprojects .db-prj-featured h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+.db-allprojects .db-prj-featured .block-info {
+  line-height: 30px;
+  height: 120px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.db-allprojects .db-prj-featured .block-btn {
+  margin-bottom: 35px;
+}
+.db-allprojects .db-prj-featured .block-item-last {
+  margin-top: -25%;
+}
+@media (max-width: 768px) {
+  .db-allprojects .db-prj-featured .block-item-last {
+    margin-top: 0;
+  }
+}
+.db-allprojects .grid-item {
+  margin-bottom: 30px;
+  width: 25%;
+  padding: 0 15px;
+}
+@media (max-width: 991px) {
+  .db-allprojects .grid-item {
+    width: 33%;
+  }
+}
+@media (max-width: 768px) {
+  .db-allprojects .grid-item {
+    width: 50%;
+  }
+}
+@media (max-width: 380px) {
+  .db-allprojects .grid-item {
+    width: 100%;
+  }
+}
+.db-allprojects .grid-item img {
+  width: 100%;
 }
 .db-allprojects .db-title {
   font-size: 150px;
@@ -658,16 +718,23 @@ footer ul a:hover {
   font-weight: bold;
   text-align: center;
   color: #e6e7e8;
-  margin-top: 100px;
+  margin-top: 32px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
 }
+@media (max-width: 765px) {
+  .db-allprojects .db-title {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
 .db-allprojects .block-img {
   max-width: 100%;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   position: relative;
 }
 .db-allprojects .block-img img {
@@ -678,38 +745,35 @@ footer ul a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #343333;
-  font-size: 20px;
-  line-height: 1.5em;
-  margin-bottom: 25px;
-  margin-top: -5px;
+  font-size: 18px;
+  line-height: 25px;
+  max-height: 75px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  overflow: hidden;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
 }
-.db-allprojects .block-info {
-  margin-bottom: 35px;
-  line-height: 2em;
+.db-allprojects h4 a {
   color: #343333;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-height: 8em;
-  transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
+}
+.db-allprojects h4 a:hover {
+  color: #000000;
+  text-decoration: none;
 }
 .db-allprojects .block-btn {
-  padding: 10px 35px;
-  border: 1px solid #343333;
+  padding: 10px 25px;
+  border: 2px solid #343333;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #343333;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  letter-spacing: 2px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -717,26 +781,116 @@ footer ul a:hover {
 }
 .db-allprojects .block-btn:hover {
   background-color: #000000;
-  border: 1px solid #000000;
+  border-color: #000000;
   color: #ffffff;
 }
 .db-allprojects .block-item {
   max-width: 100%;
-  margin-bottom: 30px;
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 15px;
+  position: relative;
 }
 .db-allprojects .block-item .bg-opacity {
-  background-color: #96785e;
-  position: relative;
-  max-width: 100%;
-  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(150, 120, 94, 0.3);
+  width: 100%;
+  height: 100%;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .db-allprojects .block-item .bg-opacity {
+    opacity: 1;
+  }
+}
+.db-allprojects .block-item:hover .bg-opacity {
+  opacity: 1;
+}
+.db-allprojects .block-item .block-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -80px;
+  color: #FFF;
+  border-color: #FFF;
+}
+.db-allprojects .block-item .block-btn:hover {
+  border-color: #000000;
+}
+/*---------- Project --------*/
+.db-project {
+  margin-bottom: 100px;
+}
+.db-project .db-title {
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #343333;
+  margin: 180px 0 40px 0;
+  line-height: 1.5em;
+}
+.db-project .db-text {
+  font-size: 18px;
+  color: #666d70;
+  line-height: 2em;
+  margin-bottom: 40px;
+  font-family: 'Lato', sans-serif;
+  min-width: 100%;
+}
+.db-project .db-text p {
+  margin-bottom: 20px;
+}
+.db-project .db-excer {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2em;
+  margin-bottom: 40px;
+  color: #866c56;
+  min-width: 100%;
+}
+.db-project .db-icon {
+  width: 166px;
+  height: 166px;
+  margin-bottom: 30px;
+}
+.db-project .db-icon img {
+  width: 100%;
+}
+.db-project .db-title-history {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #343333;
+}
+.db-project .db-text-history {
+  font-family: 'Montserrat', sans-serif;
+  color: #979797;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.db-project .db-tag {
+  padding: 5px 5px;
+  margin-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 8px !important;
+  border: 1px solid #838d8f;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+.db-project .db-tag:hover {
+  border: 1px solid #000000;
+  color: #000000;
 }
 /*---------- Small devices (tablets, 768px and up) -----------*/
 @media (max-width: 768px) {
@@ -760,5 +914,13 @@ footer ul a:hover {
     font-size: 1.2em;
     border: none !important;
     background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .db-project .db-title {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #343333;
+    margin: 180px 0 40px 0;
+    line-height: 1.5em;
   }
 }

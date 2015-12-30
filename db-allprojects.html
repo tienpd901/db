@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,14 +13,12 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="style/main.css">
-	<link rel="stylesheet" href="style/owl.carousel.css">
-	<link rel="stylesheet" href="style/jquery.bxslider.css">
 </head>
 <body>
 	<!-- Header Navigation -->
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-md-10 col-sm-10 col-xs-12">
 				<nav class="navbar db-nav">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -52,22 +51,30 @@
 				</nav>
 			</div>
 
-			<div class="col-md-2 nopadding">
+			<div class="col-md-2 col-sm-2 col-xs-2 hidden-xs nopadding">
 				<div class="db-navigation-right-toggle">
 					<a href="javascript:void(0)" id="btn-toggle-nav">icon</a>
 
 					<ul class="db-list-nav-items noliststyle" style="display: none">
 						<li class="db-list-nav-item active">
-							<a class="db-livingroom" href="">living room</a>
+							<a class="db-livingroom" href="">
+								<span>living room</span>
+							</a>
 						</li>
 						<li class="db-list-nav-item">
-							<a href="" class="db-bedroom">bed room</a>
+							<a href="" class="db-bedroom">
+								<span>bed room</span>
+							</a>
 						</li>
 						<li class="db-list-nav-item">
-							<a href="" class="db-kidsroom">kids room</a>
+							<a href="" class="db-kidsroom">
+								<span>kids room</span>
+							</a>
 						</li>
 						<li class="db-list-nav-item">
-							<a href="" class="db-homedecor">home decor</a>
+							<a href="" class="db-homedecor">
+								<span>home decor</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -76,35 +83,47 @@
 
 	</div>
 	<!-- End Header Navigation -->
-	<!-- All Projects -->	
-	<div class="container">
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-10 text-right">
+				<span class="db-hotline db-other-pages">HOTLINE: 0123 456 789</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Show All -->	
+	<div class="container container-1280">
 		<div class="db-allprojects">
 			<div class="db-title">All projects</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-1">
+
+			<div class="db-prj-featured row">
+				<div class="col-md-6 col-sm-6 col-md-offset-1 col-sm-offset-1">
 					<img src="images/db-allprojects-1.jpg" alt="" class="block-img">
 				</div>
-				<div class="col-md-5">
+
+				<div class="col-md-5 col-sm-5">
 					<h4>Time Square Tower</h4>
 					<div class="block-info">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</div>
 					<a href="#" class="block-btn">read more</a>
 				</div>
-				<div class="col-md-5 ">
+
+				<div class="col-md-5 col-sm-5">
 					<img src="images/db-allprojects-3.jpg" alt="" class="block-img">
 					<h4>District Eight Interior</h4>
 					<div class="block-info">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
 					</div>
 					<a href="#" class="block-btn">read more</a>
-					
 				</div>
-				<div class="col-md-3">
+
+				<div class="block-item-last col-md-3 col-sm-3">
 					<img src="images/db-allprojects-2.jpg" alt="" class="block-img">
-					
 				</div>
-				<div class="col-md-4">
+
+				<div class="block-item-last col-md-4 col-sm-4">
 					<h4>TTT Architecture</h4>
 					<div class="block-info">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
@@ -112,55 +131,94 @@
 					<a href="#" class="block-btn">read more</a>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-4.jpg); width: 297px; height: 300px;">
-						
+
+			<div class="db-prj-latest row">
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-4.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
 					</div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
 				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-5.jpg); width: 300px; height: 404px;"></div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
-				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-6.jpg); width: 300px; height: 350px;"></div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
-				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-7.jpg); width: 300px; height: 500px;"></div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
-				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-7.jpg); width: 300px; height: 500px;">
-						
+
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-5.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
 					</div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
 				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-4.jpg); width: 297px; height: 300px;"></div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
+
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-6.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
+					</div>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
 				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-6.jpg); width: 300px; height: 350px;"></div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-7.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
+					</div>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
 				</div>
-				<div class="col-md-3">
-					<div class="block-item" style="background-image: url(images/db-allprojects-5.jpg); width: 300px; height: 404px;"></div>
-					<h4>The 11+ Sound1 Speaker 
-						pairs with Bluetooth enabled portable devices</h4>
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-7.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
+					</div>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
+				</div>
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-4.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
+					</div>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
+				</div>
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-6.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
+					</div>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
+				</div>
+				<div class="grid-item">
+					<div class="block-item">
+						<img src="images/db-allprojects-5.jpg" alt="">
+						<div class="bg-opacity">
+							<a href="" class="block-btn">read more</a>
+						</div>
+					</div>
+					<h4><a href="">The 11+ Sound1 Speaker 
+						pairs with Bluetooth enabled portable devices</a></h4>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End All Projects -->
+	<!-- End Show All -->
 
 	<!-- End Footer -->
 	<footer>
@@ -209,33 +267,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js" ></script>
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js" ></script>
 	<script src="js/main.js" type="text/javascript"></script>
-	<script src="js/owl.carousel.min.js" type="text/javascript"></script>
-	<script src="js/jquery.bxslider.js" type="text/javascript"></script>
 	<script>
 
+		// $grid.imagesLoaded().progress( function() {
+		//   $grid.masonry('layout');
+		// });
 
+		// $('.db-prj-latest').masonry({
+		//   // options
+		//   itemSelector: '.grid-item',
+		//   columnWidth: 0
+		// });
 
-		$('.db-bxslider').bxSlider({
-		  pagerCustom: '#db-bx-pager'
-		});
-
-		$(document).ready(function() {
-		 
-			$("#db-projects").owlCarousel({
-
-				navigation : true, // Show next and prev buttons
-				slideSpeed : 300,
-				paginationSpeed : 400,
-				singleItem:true
-			});
-
-			$("#db-products").owlCarousel({
-				items : 3,
-				itemsDesktop : [1199,3],
-				itemsDesktopSmall : [979,3],
-		  	});
-				 
+		var $grid = $('.db-prj-latest').imagesLoaded( function() {
+		  // init Masonry after all images have loaded
+	  		$grid.masonry({
+				itemSelector: '.grid-item',
+				columnWidth: 0
+	  		});
 		});
 	</script>
 </body>
